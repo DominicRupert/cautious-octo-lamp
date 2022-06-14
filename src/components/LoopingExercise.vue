@@ -16,9 +16,9 @@
           <!-- add the v-for to player-card -->
           <div class="player-card text-center" v-for="(player, index) in state.players">
             <h5>Player {{index+ 1}}</h5>
-            <div>
+            <div class="player-card">
               
-              <img class="img" src="player.photo" />
+              <img class="img" :src="player.photo" />
             </div>
             <div>
               <span>{{player.name}}</span>
